@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Books Prototype</title>
+</head>
+<body>
+  <h1>Personalized Books Prototype</h1>
+
+  <section id="register">
+    <h2>Register</h2>
+    <input id="register-email" placeholder="Email">
+    <input id="register-password" placeholder="Password" type="password">
+    <button onclick="register()">Register</button>
+    <pre id="register-result"></pre>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <input id="login-email" placeholder="Email">
+    <input id="login-password" placeholder="Password" type="password">
+    <button onclick="login()">Login</button>
+    <pre id="login-result"></pre>
+  </section>
+
+  <section id="story">
+    <h2>Generate Story</h2>
+    <input id="story-title" placeholder="Title">
+    <input id="story-childName" placeholder="Child name">
+    <input id="story-age" placeholder="Age" type="number">
+    <input id="story-style" placeholder="Style">
+    <input id="story-pages" placeholder="Pages" type="number" min="1" max="25">
+    <button onclick="generateStory()">Generate</button>
+    <pre id="story-result"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
